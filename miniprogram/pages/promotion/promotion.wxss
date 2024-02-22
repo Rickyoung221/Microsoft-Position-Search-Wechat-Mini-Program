@@ -1,0 +1,10 @@
+.text 
+{
+  margin: 30rpx;
+  display: block;
+}
+
+.group
+{
+  margin: 55rpx;
+}

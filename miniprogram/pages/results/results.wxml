@@ -1,0 +1,54 @@
+<!--results.wxml-->
+<view class='share'>
+  <image src='https://neitui.blob.core.windows.net/map/share.png?sp=r&st=2022-06-05T07:13:00Z&se=2023-08-26T15:13:00Z&spr=https&sv=2020-08-04&sr=b&sig=d7Xygh4PC%2F67oXFh%2FZvFcvPhpyLZDmaZDUlHh7OjNxk%3D'></image>
+  <text>Share</text>
+  <button open-type="share"></button>
+</view>
+<view class="filter section">Filter results by clicking below fields</view>
+<view class="section">
+  <picker bindchange="bindLocationPickerChange" value="{{locationIndex}}" range="{{locationArray}}">
+    <view class="picker">
+      Location：{{locationArray[locationIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindProfessionPickerChange" value="{{professionIndex}}" range="{{professionArray}}">
+    <view class="picker">
+      Profession：{{professionArray[professionIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindRoleTypeIndexPickerChange" value="{{roleTypeIndex}}" range="{{roleTypeArray}}">
+    <view class="picker">
+      Role Type：{{roleTypeArray[roleTypeIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindEmploymentTypePickerChange" value="{{employmentTypeIndex}}" range="{{employmentTypeArray}}">
+    <view class="picker">
+      Employment Type：{{employmentTypeArray[employmentTypeIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker bindchange="bindSortByPickerChange" value="{{sortByIndex}}" range="{{sortByArray}}">
+    <view class="picker">
+      Sort By：{{sortByArray[sortByIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="container log-list">
+  <block>
+    <text wx:if="{{noResults}}">No results found</text>
+  </block>
+  <block class= "results" wx:for="{{jobResults}}" wx:key="timeStamp">
+  <block class="click" >
+    <text class="Title" id="{{item.id}}" bindtap="itemClicked">{{item.Title}}</text>
+    <text class="SubDetails">{{item.Location}} | {{item.EmploymeneType}} | {{item.Profession}} | {{item.RoleType}} | {{item.DatePosted}}</text>
+    <text class="Content" >{{item.Content}}</text>
+    </block>
+  </block>
+</view>

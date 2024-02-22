@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class='share'>
+  <image src='https://neitui.blob.core.windows.net/map/share.png?sp=r&st=2022-06-05T07:13:00Z&se=2023-08-26T15:13:00Z&spr=https&sv=2020-08-04&sr=b&sig=d7Xygh4PC%2F67oXFh%2FZvFcvPhpyLZDmaZDUlHh7OjNxk%3D'></image>
+  <text>Share</text>
+  <button open-type="share"></button>
+</view>
+<view class="container">
+  <image class= "image" mode="scaleToFill" wx:for="{{pictures}}" wx:key="unique" src="{{item}}" data-index="{{index}}"></image>
+  <form bindsubmit='bindSearch'>
+        <input id="input" class="input" maxlength="30" placeholder="Java, C#" name="userInput"  value="{{userinfo.userphone}}" />
+        <button class="weui-btn" formType="submit" type='primary'>Search</button>
+   </form>
+  <text class="Intro">搜索MS(巨应)国内职位，只支持英文，可以尝试搜索Java, Software Engineer</text>
+</view>
+<button class="advice" bindtap="joinItemClicked">提供建议或者加入内推群</button>
+<view>
+</view>

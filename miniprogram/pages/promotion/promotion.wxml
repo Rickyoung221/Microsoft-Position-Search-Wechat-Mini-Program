@@ -1,0 +1,7 @@
+<!--promotion.wxml-->
+<view class='promotion'>
+   <text class="text">加我微信，进入巨应内推群，分享资料和面经或者提供建议</text>
+   <text class="text">微信号：MsBless </text>
+   <image show-menu-by-longpress="true" src="https://neitui.blob.core.windows.net/map/Promotion.png?sp=r&st=2022-06-05T07:52:00Z&se=2024-04-13T15:52:00Z&sv=2020-08-04&sr=b&sig=CRWiWxZAiAYg4T7VPLQxws1f1atm1FGqpedmEpjkUlQ%3D"></image>
+   <image class="group" src="https://neitui.blob.core.windows.net/map/Group.jpg?sp=r&st=2022-06-05T13:59:45Z&se=2024-07-26T21:59:45Z&sv=2020-08-04&sr=b&sig=lKEIt0VQBVmpERiZzOxwtKiCa3riJjn4niqWPIq1VVc%3D"></image>
+</view>

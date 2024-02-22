@@ -1,0 +1,16 @@
+<!--results.wxml-->
+<view class='share'>
+  <image src='https://neitui.blob.core.windows.net/map/share.png?sp=r&st=2022-06-05T07:13:00Z&se=2023-08-26T15:13:00Z&spr=https&sv=2020-08-04&sr=b&sig=d7Xygh4PC%2F67oXFh%2FZvFcvPhpyLZDmaZDUlHh7OjNxk%3D'></image>
+  <text>Share</text>
+  <button open-type="share"></button>
+</view>
+<view class="container log-list">
+  <block class= "results" wx:for="{{jobResults}}" wx:key="timeStamp">
+  <block class="click">
+    <text class="Title" id="{{item.id}}">{{item.Title}}</text>
+    <text class="SubDetails">{{item.Location}} | {{item.EmploymeneType}} | {{item.Profession}} | {{item.RoleType}} | {{item.DatePosted}}</text>
+    <rich-text nodes="{{item.SourceHtml}}"></rich-text>
+    </block>
+  </block>
+  <button bindtap="joinItemClicked">加入巨应内推群</button>
+</view>

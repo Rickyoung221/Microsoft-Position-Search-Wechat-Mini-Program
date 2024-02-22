@@ -1,0 +1,91 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.results {
+  margin-left: 0rpx;
+  padding-left: 0rpx;
+}
+
+.Location{
+  margin-left: 0rpx;
+  padding-left: 0rpx;
+}
+.SubDetails 
+{
+  font-size: 20rpx;
+  color: #333333;
+}
+
+.Content {
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  font-weight: 200;
+  font-size: 30rpx;
+}
+
+.Content {
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  font-weight: 200;
+  font-size: 30rpx;
+  color: #333333;
+}
+
+.Title
+{
+  color: #2440b3
+}
+.neitui { 
+  height: 140rpx;
+  width: 140rpx;
+  position: fixed;
+  bottom: 230rpx;
+  right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  z-index: 10;
+} 
+
+.share { 
+  height: 140rpx;
+  width: 140rpx;
+  position: fixed;
+  bottom: 170rpx;
+  right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  background: rgba(0, 0, 0, .05);
+  border-radius: 50%;
+  z-index: 10;
+} 
+
+.share image {
+  height: 60rpx;
+  width: 60rpx;
+}
+.share text {
+  color: #000;  
+}
+
+.share button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  z-index: 99;
+}
+
+
